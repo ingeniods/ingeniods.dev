@@ -1,361 +1,151 @@
-<html><head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script><script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif']
-            }
-          }
-        }
-      };
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
     </script>
-    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>::-webkit-scrollbar { display: none;}</style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
-      body {
-        font-family: 'Inter', sans-serif !important;
-      }
-      
-      /* Preserve Font Awesome icons */
-      .fa, .fas, .far, .fal, .fab {
-        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
-      }
-    </style><style>
-  .highlighted-section {
-    outline: 2px solid #3F20FB;
-    background-color: rgba(63, 32, 251, 0.1);
-  }
-
-  .edit-button {
-    position: absolute;
-    z-index: 1000;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  html, body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  </style></head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap">
+    <link rel="stylesheet" href="style.css" />
+    <title>Ingenio DS - CV</title>
+</head>
 <body>
 
 <div id="resume-container" class="flex min-h-[1200px] bg-white">
-  <!-- Left Sidebar -->
-  <div id="sidebar" class="w-1/3 bg-neutral-900 text-white p-8">
-    <!-- Profile Section -->
-    <div id="profile-section" class="text-center mb-8">
-      <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&amp;seed=12345" alt="Profile" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white">
-      <h1 class="text-2xl mb-2">MAURO GÓMEZ</h1>
-      <h2 class="text-lg text-neutral-400 mb-4">Software Engineer</h2>
-    </div>
+    <!-- Left Sidebar -->
+    <div id="sidebar" class="w-1/3 bg-neutral-900 text-white p-8">
+        <!-- Profile Section -->
+        <div id="profile-section" class="text-center mb-8">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?scale=200&amp;seed=12345" alt="Profile"
+                 class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white">
+            <h1 class="text-2xl mb-2" data-role="name">JHON DOE</h1>
+            <h2 class="text-lg text-neutral-400 mb-4" data-role="title">ROCKET SCIENCE</h2>
+        </div>
 
-    <!-- About Me -->
-    <div id="about-section" class="mb-8">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Sobre Mí</h3>
-      <p class="text-sm leading-relaxed">
-        Ingeniero de software con amplia experiencia en desarrollo backend y liderazgo técnico. 
-        Especializado en arquitecturas de microservicios, buenas prácticas de desarrollo y 
-        metodologías ágiles para la entrega de soluciones escalables.
-      </p>
-    </div>
+        <!-- About Me -->
+        <div id="about-section" class="mb-8">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Sobre Mí</h3>
+            <p class="text-sm leading-relaxed">
+                Ingeniero de cosas galacticas.
+            </p>
+        </div>
 
-    <!-- Education -->
-    <div id="education-section" class="mb-8">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Educación</h3>
-      <div class="mb-4">
-        <h4 class="text-sm mb-1">Ingeniería de Sistemas</h4>
-        <p class="text-xs text-neutral-300">Universidad Nacional, Medellín</p>
-        <p class="text-xs text-neutral-300">2010 - 2015</p>
-        <p class="text-xs mt-2">Programa enfocado en desarrollo de software y arquitectura de sistemas.</p>
-      </div>
-      <div>
-        <h4 class="text-sm mb-1">Máster en DevOps</h4>
-        <p class="text-xs text-neutral-300">Universidad Internacional, España</p>
-        <p class="text-xs text-neutral-300">2020 - 2022</p>
-        <p class="text-xs mt-2">Enfoque práctico en CI/CD, containerización y automatización.</p>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div id="skills-section" class="mb-8">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Habilidades</h3>
-      <div class="space-y-3">
-        <div>
-          <h4 class="text-sm mb-2">Lenguajes</h4>
-          <p class="text-xs">Java, Kotlin, Golang, Scala, TypeScript</p>
-        </div>
-        <div>
-          <h4 class="text-sm mb-2">Frameworks</h4>
-          <p class="text-xs">Spring Boot, Play Framework, React</p>
-        </div>
-        <div>
-          <h4 class="text-sm mb-2">Bases de Datos</h4>
-          <p class="text-xs">Oracle, PostgreSQL, MongoDB</p>
-        </div>
-        <div>
-          <h4 class="text-sm mb-2">DevOps</h4>
-          <p class="text-xs">Git, CI/CD, Docker, Azure, AWS</p>
-        </div>
-        <div>
-          <h4 class="text-sm mb-2">Arquitectura</h4>
-          <p class="text-xs">Microservicios, DDD, Clean Architecture</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Links -->
-    <div id="links-section" class="mb-8">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Enlaces</h3>
-      <div class="space-y-2">
-        <div class="flex items-center">
-          <i class="fa-brands fa-medium w-4 mr-2"></i>
-          <span class="text-xs">Blog Medium</span>
-        </div>
-        <div class="flex items-center">
-          <i class="fa-brands fa-linkedin w-4 mr-2"></i>
-          <span class="text-xs">LinkedIn</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Languages -->
-    <div id="languages-section" class="mb-8">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Idiomas</h3>
-      <div class="space-y-3">
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="text-sm">Español</span>
-            <span class="text-xs">Nativo</span>
-          </div>
-          <div class="w-full bg-neutral-700 rounded-full h-2">
-            <div class="bg-neutral-400 h-2 rounded-full w-full"></div>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-between mb-1">
-            <span class="text-sm">Inglés</span>
-            <span class="text-xs">Intermedio-Alto</span>
-          </div>
-          <div class="w-full bg-neutral-700 rounded-full h-2">
-            <div class="bg-neutral-400 h-2 rounded-full w-4/5"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Courses -->
-    <div id="courses-section">
-      <h3 class="text-lg text-neutral-400 mb-3 uppercase">Cursos</h3>
-      <div class="space-y-2">
-        <div>
-          <h4 class="text-sm">Certified Scrum Master</h4>
-          <p class="text-xs text-neutral-300">Scrum Alliance - 2023</p>
-        </div>
-        <div>
-          <h4 class="text-sm">TOGAF 9 Foundation</h4>
-          <p class="text-xs text-neutral-300">The Open Group - 2022</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Right Content -->
-  <div id="main-content" class="w-2/3 p-8">
-    <!-- Header -->
-    <div id="header-section" class="mb-8">
-      <h1 class="text-4xl text-neutral-900 mb-2">MAURO GÓMEZ MEJIA</h1>
-      <h2 class="text-xl text-neutral-600 mb-4">Software Engineer</h2>
-      <div class="space-y-1 text-sm text-neutral-600">
-        <div class="flex items-center">
-          <i class="fa-solid fa-location-dot w-4 mr-2"></i>
-          <span>Medellín, Colombia</span>
-        </div>
-        <div class="flex items-center">
-          <i class="fa-solid fa-phone w-4 mr-2"></i>
-          <span>+57 300 123 4567</span>
-        </div>
-        <div class="flex items-center">
-          <i class="fa-solid fa-envelope w-4 mr-2"></i>
-          <span>mauro.gomez@email.com</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experience -->
-    <div id="experience-section" class="mb-8">
-      <h3 class="text-2xl text-neutral-900 mb-6 uppercase border-b-2 border-neutral-300 pb-2">Experiencia Laboral</h3>
-      
-      <!-- TEKTON -->
-      <div id="tekton-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">TEKTON</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2023 - Presente</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Java</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Azure</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Spring Boot</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Microservicios</span>
+        <!-- Education -->
+        <div id="education-section" class="mb-8">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Educación</h3>
+            <div class="mb-4">
+                <h4 class="text-sm mb-1">Ingeniería de ROCKET SCIENCE</h4>
+                <p class="text-xs text-neutral-300">Universidad ROCKET SCIENCE, Medellín</p>
+                <p class="text-xs text-neutral-300">2010 - 2015</p>
+                <p class="text-xs mt-2">ROCKET SCIENCE</p>
             </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Senior Developer II</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Liderazgo técnico en proyectos de arquitectura</li>
-              <li>• Implementación de CI/CD pipelines en Azure</li>
-              <li>• Mentoría a desarrolladores junior</li>
-              <li>• Optimización de performance y escalabilidad</li>
-            </ul>
-          </div>
         </div>
-      </div>
 
-      <!-- ENDAVA -->
-      <div id="endava-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">ENDAVA</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2021 - 2023</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">React</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Oracle</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Testing</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">DevOps</span>
+        <!-- Skills -->
+        <div id="skills-section" class="mb-8">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Habilidades</h3>
+            <div class="space-y-3">
+                <div>
+                    <h4 class="text-sm mb-2">Lenguajes</h4>
+                    <p class="text-xs">.Jet</p>
+                </div>
             </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Senior Developer</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Desarrollo full-stack con React y Spring Boot</li>
-              <li>• Integración con bases de datos Oracle complejas</li>
-              <li>• Implementación de pruebas automatizadas</li>
-              <li>• Participación en despliegues y monitoreo</li>
-            </ul>
-          </div>
         </div>
-      </div>
 
-      <!-- RAPPYPAY -->
-      <div id="rappypay-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">RAPPYPAY</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2019 - 2021</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Kotlin</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">TypeScript</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Microservicios</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">AWS</span>
+        <!-- Links -->
+        <div id="links-section" class="mb-8">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Enlaces</h3>
+            <div class="space-y-2">
+                <div class="flex items-center">
+                    <i class="fa-brands fa-medium w-4 mr-2"></i>
+                    <span class="text-xs">Blog ROCKET SCIENCE</span>
+                </div>
             </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Backend Developer</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Desarrollo de microservicios para pagos</li>
-              <li>• Integración con APIs de terceros</li>
-              <li>• Implementación de patrones de seguridad</li>
-              <li>• Optimización de consultas de base de datos</li>
-            </ul>
-          </div>
         </div>
-      </div>
 
-      <!-- ZABUD -->
-      <div id="zabud-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">ZABUD</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2017 - 2019</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Java</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Arquitectura</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">PostgreSQL</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Scrum</span>
+        <!-- Languages -->
+        <div id="languages-section" class="mb-8">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Idiomas</h3>
+            <div class="space-y-3">
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm">ROCKET SCIENCE</span>
+                        <span class="text-xs">Nativo</span>
+                    </div>
+                    <div class="w-full bg-neutral-700 rounded-full h-2">
+                        <div class="bg-neutral-400 h-2 rounded-full w-full"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Software Architect</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Diseño de arquitectura empresarial</li>
-              <li>• Definición de estándares de desarrollo</li>
-              <li>• Liderazgo de equipos multidisciplinarios</li>
-              <li>• Implementación de metodologías ágiles</li>
-            </ul>
-          </div>
         </div>
-      </div>
 
-      <!-- CEIBA SOFTWARE -->
-      <div id="ceiba-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">CEIBA SOFTWARE HOUSE</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2015 - 2017</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Scala</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Play Framework</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Angular</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">MongoDB</span>
+        <!-- Courses -->
+        <div id="courses-section">
+            <h3 class="text-lg text-neutral-400 mb-3 uppercase">Cursos</h3>
+            <div class="space-y-2">
+                <div>
+                    <h4 class="text-sm">Certified ROCKET SCIENCE</h4>
+                    <p class="text-xs text-neutral-300">ROCKET SCIENCE Alliance - 2023</p>
+                </div>
             </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Full Stack Developer</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Desarrollo con Scala y Play Framework</li>
-              <li>• Frontend con Angular e integración APIs</li>
-              <li>• Trabajo con bases de datos NoSQL MongoDB</li>
-              <li>• Participación en ciclo completo de desarrollo</li>
-            </ul>
-          </div>
         </div>
-      </div>
-
-      <!-- FUNDACIÓN COMFENALCO -->
-      <div id="comfenalco-experience" class="mb-8 relative">
-        <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
-        <div class="ml-6 grid grid-cols-2 gap-6">
-          <div>
-            <h4 class="text-lg font-bold text-neutral-900 mb-1">FUNDACIÓN COMFENALCO</h4>
-            <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2013 - 2015</p>
-            <div class="mb-3">
-              <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">Java</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">.NET</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">SQL Server</span>
-              <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">MVC</span>
-            </div>
-          </div>
-          <div>
-            <h5 class="text-base font-semibold text-neutral-800 mb-2">Junior Developer</h5>
-            <ul class="text-sm text-neutral-700 space-y-1">
-              <li>• Desarrollo de aplicaciones con Java y .NET</li>
-              <li>• Mantenimiento de sistemas legacy</li>
-              <li>• Creación de reportes y consultas SQL</li>
-              <li>• Soporte técnico y resolución de incidencias</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <!-- Right Content -->
+    <div id="main-content" class="w-2/3 p-8">
+        <!-- Header -->
+        <div id="header-section" class="mb-8">
+            <h1 class="text-4xl text-neutral-900 mb-2" data-role="name">JHON DOE</h1>
+            <h2 class="text-xl text-neutral-600 mb-4" data-role="title">ROCKET SCIENCE</h2>
+            <div class="space-y-1 text-sm text-neutral-600">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-location-dot w-4 mr-2"></i>
+                    <span data-role="location" >Moldovia, Colombia</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-phone w-4 mr-2"></i>
+                    <span data-role="phone">+57 300 123 4567</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-envelope w-4 mr-2"></i>
+                    <span data-role="email">jhon.doe@email.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience-section" class="mb-8">
+            <h3 class="text-2xl text-neutral-900 mb-6 uppercase border-b-2 border-neutral-300 pb-2">Experiencia
+                Laboral</h3>
+            <!-- FUNDACIÓN COMFENALCO -->
+            <div id="comfenalco-experience" class="mb-8 relative">
+                <div class="absolute left-0 top-0 w-1 h-full bg-neutral-400"></div>
+                <div class="ml-6 grid grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-neutral-900 mb-1">FUNDACIÓN WY</h4>
+                        <p class="text-sm text-neutral-600 mb-2">Medellín, Colombia • 2003 - 2045</p>
+                        <div class="mb-3">
+                            <p class="text-xs font-semibold text-neutral-700 mb-1">Stack:</p>
+                            <span class="text-xs bg-neutral-200 px-2 py-1 rounded mr-1 mb-1 inline-block">.Jet</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-base font-semibold text-neutral-800 mb-2">Space Rocket Developer</h5>
+                        <ul class="text-sm text-neutral-700 space-y-1">
+                            <li>• Desarrollo de cosas galacticas con .JET</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-</body></html>
+</body>
+<script type="text/javascript"  src="script.js"></script>
+</html>
